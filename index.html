@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>oninput attribute</title>
+		<style>
+			body {
+				text-align:center;
+			}
+			h1 {
+				color:green;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>GeeksforGeeks</h1>
+		<h2>oninput Attribute</h2>
+		Enter some Text here: <input type="text" id="GFG"
+		oninput="Geeks()">
+		<p id="sudo"></p>
+		<script>
+			function Geeks() {
+				var x = document.getElementById("GFG").value;
+				document.getElementById("sudo").innerHTML =
+				"Entered Text: " + x;
+			}
+		</script>
+	</body>
+</html>					
